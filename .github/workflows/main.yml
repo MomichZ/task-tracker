@@ -1,0 +1,11 @@
+name: Проверка Python-скрипта
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Запуск Python-скрипта
+        run: python tracker.py
